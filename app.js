@@ -5,7 +5,7 @@ app.use(bodyParser.urlencoded({extended: false}));
 PORT = 4000;
 
  app.use('/add-product', (req, res, next)=>{
-res.send('<form action="/product" method="POST"><input type="text" name="title"><button type="submit">Add product</button>')
+res.send('<form action="/product" method="POST"><input type="text" name="title"><input type="number" name="quantity"><button type="submit">Add product</button>')
 
  });
 
