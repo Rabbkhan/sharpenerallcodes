@@ -1,9 +1,10 @@
 const http = require('http');
+const express = require('express');
+const app= express();
+PORT = 4000;
+// console.log(routes.someText);
+ app.use('/', (req, res, next)=>{
+res.send(`<h1> hello sharpener</h1>`)
+ })
 
-const routes = require('./routes');
-
-console.log(routes.someText);
-
-const server = http.createServer(routes.handler);
-
-server.listen(3000);
+app.listen(`${PORT}`);
